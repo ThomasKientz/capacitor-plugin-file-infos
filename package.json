@@ -1,0 +1,44 @@
+{
+  "name": "capacitor-plugin-file-infos",
+  "version": "0.0.1",
+  "description": "Capacitor plugin for Android to get file's infos",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Thomas Kientz",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^2.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^2.0.2",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "dist/",
+    "android/"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomasKientz/capacitor-plugin-file-infos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThomasKientz/capacitor-plugin-file-infos.git/issues"
+  }
+}
